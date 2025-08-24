@@ -17,11 +17,6 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
 
-  security:
-    jwt:
-      secret: ${JWT_SECRET:your-super-secret-jwt-key-here-make-it-long}
-      expiration: 86400000 # 24 hours
-
 pokeapi:
   base-url: https://pokeapi.co/api/v2
 
@@ -31,4 +26,4 @@ server:
 logging:
   level:
     com.pokemonteambuilder: INFO
-    org.springframework.security: DEBUG
+    root: INFO

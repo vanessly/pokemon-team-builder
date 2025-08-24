@@ -24,7 +24,6 @@ pokemon-team-builder-client/.yarn/*
 pokemon-team-builder-client/coverage/
 pokemon-team-builder-client/.next/
 pokemon-team-builder-client/out/
-pokemon-team-builder-client/.env*
 pokemon-team-builder-client/build/
 pokemon-team-builder-client/.vercel/
 pokemon-team-builder-client/*.tsbuildinfo
