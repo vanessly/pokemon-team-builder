@@ -1,0 +1,35 @@
+# Backend (Spring Boot Maven) - Line endings
+api/mvnw text eol=lf
+api/**/*.cmd text eol=crlf
+
+# Frontend (Node.js) - Line endings
+frontend/**/*.js text eol=lf
+frontend/**/*.ts text eol=lf
+frontend/**/*.tsx text eol=lf
+frontend/**/*.jsx text eol=lf
+frontend/**/*.json text eol=lf
+frontend/**/*.md text eol=lf
+
+# Backend (Java) - Line endings
+api/**/*.java text eol=lf
+api/**/*.xml text eol=lf
+api/**/*.yml text eol=lf
+api/**/*.yaml text eol=lf
+api/**/*.properties text eol=lf
+
+# General text files
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary files (explicitly mark as binary)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.jar binary
+*.war binary
+*.ear binary

@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Custom Pokemon Colors */
+@theme {
+    --color-pokemon-normal: #a8a878;
+    --color-pokemon-fighting: #c03028;
+    --color-pokemon-flying: #a890f0;
+    --color-pokemon-poison: #a040a0;
+    --color-pokemon-ground: #e0c068;
+    --color-pokemon-rock: #b8a038;
+    --color-pokemon-bug: #a8b820;
+    --color-pokemon-ghost: #705898;
+    --color-pokemon-steel: #b8b8d0;
+    --color-pokemon-fire: #f08030;
+    --color-pokemon-water: #6890f0;
+    --color-pokemon-grass: #78c850;
+    --color-pokemon-electric: #f8d030;
+    --color-pokemon-psychic: #f85888;
+    --color-pokemon-ice: #98d8d8;
+    --color-pokemon-dragon: #7038f8;
+    --color-pokemon-dark: #705848;
+    --color-pokemon-fairy: #ee99ac;
+
+    /* Custom Animations */
+    --animate-fade-in: fadeIn 0.5s ease-in-out;
+    --animate-slide-up: slideUp 0.3s ease-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Usage classes */
+@utility fade-in {
+    animation: var(--animate-fade-in);
+}
+
+@utility slide-up {
+    animation: var(--animate-slide-up);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

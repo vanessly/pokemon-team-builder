@@ -1,0 +1,86 @@
+# IDE and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iws
+*.iml
+*.ipr
+
+# OS Files
+.DS_Store
+*.pem
+Thumbs.db
+
+# pokemon-team-builder-client (Next.js) - All paths relative to root
+pokemon-team-builder-client/node_modules/
+pokemon-team-builder-client/.pnp
+pokemon-team-builder-client/.pnp.*
+pokemon-team-builder-client/.yarn/*
+!pokemon-team-builder-client/.yarn/patches
+!pokemon-team-builder-client/.yarn/plugins
+!pokemon-team-builder-pokemon-team-builder-api/.yarn/releases
+!pokemon-team-builder-client/.yarn/versions
+pokemon-team-builder-client/coverage/
+pokemon-team-builder-client/.next/
+pokemon-team-builder-client/out/
+pokemon-team-builder-client/.env*
+pokemon-team-builder-client/build/
+pokemon-team-builder-client/.vercel/
+pokemon-team-builder-client/*.tsbuildinfo
+pokemon-team-builder-client/next-env.d.ts
+
+# pokemon-team-builder-client Debug Logs
+pokemon-team-builder-client/npm-debug.log*
+pokemon-team-builder-client/yarn-debug.log*
+pokemon-team-builder-client/yarn-error.log*
+pokemon-team-builder-client/.pnpm-debug.log*
+
+# pokemon-team-builder-client Environment Files
+pokemon-team-builder-client/.env*
+
+# Backend (Spring Boot) - All paths relative to root
+pokemon-team-builder-api/HELP.md
+pokemon-team-builder-api/target/
+pokemon-team-builder-api/.mvn/wrapper/maven-wrapper.jar
+!pokemon-team-builder-api/**/src/main/**/target/
+!pokemon-team-builder-api/**/src/test/**/target/
+pokemon-team-builder-api/.apt_generated
+pokemon-team-builder-api/.classpath
+pokemon-team-builder-api/.factorypath
+pokemon-team-builder-api/.project
+pokemon-team-builder-api/.settings/
+pokemon-team-builder-api/.springBeans
+pokemon-team-builder-api/.sts4-cache
+pokemon-team-builder-api/nbproject/private/
+pokemon-team-builder-api/nbbuild/
+pokemon-team-builder-api/dist/
+pokemon-team-builder-api/nbdist/
+pokemon-team-builder-api/.nb-gradle/
+pokemon-team-builder-api/build/
+!pokemon-team-builder-api/**/src/main/**/build/
+!pokemon-team-builder-api/**/src/test/**/build/
+
+# Project-wide Environment and Config
+.env
+.env.local
+.env.production
+.env.staging
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
+
+# Temporary files
+tmp/
+temp/
+
+# Documentation builds (if you add docs)
+docs/_site/

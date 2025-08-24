@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: pokemon-team-builder-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pokemon_team_builder
+    username: ${DB_USERNAME:pokemon_user}
+    password: ${DB_PASSWORD:pokemon_pass}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  security:
+    jwt:
+      secret: ${JWT_SECRET:your-super-secret-jwt-key-here-make-it-long}
+      expiration: 86400000 # 24 hours
+
+pokeapi:
+  base-url: https://pokeapi.co/api/v2
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.pokemonteambuilder: INFO
+    org.springframework.security: DEBUG
